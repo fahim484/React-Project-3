@@ -20,6 +20,7 @@ import {
 } from "@nextui-org/react";
 
 import { ChevronDownIcon, UserIcon } from "@heroicons/react/24/outline";
+import { Star } from "../Icon";
 
 function HeaderNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ function HeaderNavbar() {
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className="w-full"
+        maxWidth="2xl"
       >
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle
@@ -46,7 +47,7 @@ function HeaderNavbar() {
           ></NavbarMenuToggle>
         </NavbarContent>
 
-        <NavbarContent className="sm:hidden pr-3">
+        <NavbarContent className="sm:hidden pr-24">
           <NavbarBrand>
             <img className="w-44" src="/Img/main-logo.png" alt="Main Logo" />
           </NavbarBrand>
@@ -64,8 +65,8 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            <Link className="text-[#26395C]">
-              Club <sup className="w-[41.95px] h-[16.5px] bg-[#0E8BFF] text-[#FFFFFF] text-[8px] rounded-[23px] flex items-center justify-center mb-5">⭐ HOT</sup>
+            <Link className="text-[#26395C]"> 
+              Club <sup className="w-[41.95px] h-[16.5px] bg-[#0E8BFF] text-[#FFFFFF] text-[8px] rounded-[23px] flex items-center justify-center mb-5 gap-[2px]"> <Star className="size-2" /> HOT</sup>
             </Link>
           </NavbarItem>
 
@@ -74,7 +75,7 @@ function HeaderNavbar() {
               <DropdownTrigger>
                 <Button variant="none">
                   Things to do
-                  <ChevronDownIcon className="text-[#0E8BFF] w-4 h-4 font-bold" />
+                  <ChevronDownIcon style={{ strokeWidth: 2 }} className="text-[#0E8BFF] w-4 h-4 font-bold stroke-2" />
                 </Button>
               </DropdownTrigger>
               <DropdownMenu
@@ -125,7 +126,7 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            <Button color="primary">Contact Now</Button>
+            <Button className="bg-[#0E8BFF] text-[#FFFFFF] font-bold">Contact Now</Button>
           </NavbarItem>
 
         </NavbarContent>
@@ -154,6 +155,7 @@ function HeaderNavbar() {
             </NavbarMenuItem>
           ))}
         </NavbarMenu>
+        
         </div>
 
 
