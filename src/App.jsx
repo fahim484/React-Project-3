@@ -1,4 +1,5 @@
 import "./App.css";
+import ChillsBay from "./components/home/Chillsbay";
 import HeroArea from "./components/home/HeroArea";
 import ImgSection from "./components/home/ImgSection";
 import ThingsCard from "./components/home/ThingsToDo";
@@ -11,6 +12,7 @@ function App() {
       <HeroArea />
       <ImgSection />
       <ThingsCard />
+      <ChillsBay />
     </>
   );
 }
