@@ -1,14 +1,16 @@
 import "./App.css";
 import HeroArea from "./components/home/HeroArea";
 import ImgSection from "./components/home/ImgSection";
+import ThingsCard from "./components/home/ThingsToDo";
 import HeaderNavbar from "./components/shared/Navbar";
 
 function App() {
   return (
     <>
-    <HeaderNavbar />
-    <HeroArea />
-    <ImgSection />
+      <HeaderNavbar />
+      <HeroArea />
+      <ImgSection />
+      <ThingsCard />
     </>
   );
 }
