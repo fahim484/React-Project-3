@@ -28,7 +28,7 @@ function ChillsBay() {
           <div key={index} className="mt-10">
             <img className="w-fit mx-auto" src={card.logo} alt="Card Image" />
 
-            <div className="w-[60%] mx-auto text-center">
+            <div className="max-w-[350px] mx-auto text-center">
               <h3 className="text-3xl font-bold lg:text-[32px] lg:leading-[38px] mt-4 mb-3">{card.title}</h3>
               <p className="text-2xl leading-[34px]">{card.des}</p>
             </div>
