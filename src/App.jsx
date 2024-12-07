@@ -1,6 +1,7 @@
 import "./App.css";
 import Carousel from "./components/home/Carousel";
 import ChillsBay from "./components/home/Chillsbay";
+import GALLERY from "./components/home/GALLERY";
 import HeroArea from "./components/home/HeroArea";
 import ImgSection from "./components/home/ImgSection";
 import ThingsCard from "./components/home/ThingsToDo";
@@ -15,6 +16,7 @@ function App() {
       <ThingsCard />
       <ChillsBay />
       <Carousel />
+      <GALLERY />
     </>
   );
 }
