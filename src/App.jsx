@@ -1,11 +1,11 @@
 import "./App.css";
-import Carousel from "./components/home/Carousel";
-import ChillsBay from "./components/home/Chillsbay";
-import Footer from "./components/home/Footer";
-import GALLERY from "./components/home/GALLERY";
-import HeroArea from "./components/home/HeroArea";
-import ImgSection from "./components/home/ImgSection";
-import ThingsCard from "./components/home/ThingsToDo";
+import Carousel from "./components/HomePage/Carousel";
+import ChillsBay from "./components/HomePage/Chillsbay";
+import Footer from "./components/HomePage/Footer";
+import GALLERY from "./components/HomePage/GALLERY";
+import HeroArea from "./components/HomePage/HeroArea";
+import ImgSection from "./components/HomePage/ImgSection";
+import ThingsCard from "./components/HomePage/ThingsToDo";
 import HeaderNavbar from "./components/shared/Navbar";
 
 function App() {
