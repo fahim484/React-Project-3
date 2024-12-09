@@ -14,8 +14,7 @@ function ProfileDropDown() {
          <Dropdown>
               <DropdownTrigger>
                 <Button variant="none">
-                  {" "}
-                  <UserIcon className="text-gray-500 w-4 h-4" /> Account{" "}
+                  <UserIcon className="text-gray-500 w-4 h-4" /> Account
                 </Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="profile">

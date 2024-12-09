@@ -19,8 +19,12 @@ import {
   Button,
 } from "@nextui-org/react";
 
+const value = true;
+
 import { ChevronDownIcon, UserIcon } from "@heroicons/react/24/outline";
 import { Star } from "../Icon";
+import MyModal from "../HomePage/Modal";
+import ProfileDropDown from "../HomePage/Dropdown";
 
 function HeaderNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -111,7 +115,10 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            <Dropdown>
+            {
+              value === true ? <MyModal/> : <ProfileDropDown />
+            }
+            {/* <Dropdown>
               <DropdownTrigger>
                 <Button variant="none">
                   <UserIcon className="text-[#26395C] w-4 h-4" /> Account
@@ -122,7 +129,7 @@ function HeaderNavbar() {
                 <DropdownItem key="copy">Copy link</DropdownItem>
                 <DropdownItem key="edit">Edit file</DropdownItem>
               </DropdownMenu>
-            </Dropdown>
+            </Dropdown> */}
           </NavbarItem>
 
           <NavbarItem>
