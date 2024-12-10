@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { NavLink } from "react-router";
+
 import {
   Navbar,
   NavbarContent,
@@ -53,7 +55,9 @@ function HeaderNavbar() {
 
         <NavbarContent className="sm:hidden pr-24">
           <NavbarBrand>
-            <img className="w-44" src="/Img/main-logo.png" alt="Main Logo" />
+            <NavLink to="/">
+              <img className="w-44" src="/Img/main-logo.png" alt="Main Logo" />
+            </NavLink>
           </NavbarBrand>
         </NavbarContent>
 
@@ -61,17 +65,36 @@ function HeaderNavbar() {
 
         <NavbarContent className="hidden sm:flex gap-4 w-full justify-center text-[]">
           <NavbarBrand>
-            <img className="w-44" src="/Img/main-logo.png" alt="Main Logo" />
+            <NavLink to="/">
+              <img className="w-44" src="/Img/main-logo.png" alt="Main Logo" />
+            </NavLink>
           </NavbarBrand>
 
           <NavbarItem>
-            <Link className="text-[#26395C]">Eat & drink</Link>
+            <NavLink
+              to="/drink"
+              className="text-[#26395C]"
+              style={({ isActive }) => ({
+                color: isActive ? "#0E8BFF" : "black",
+              })}
+            >
+              Eat & drink
+            </NavLink>
           </NavbarItem>
 
           <NavbarItem>
-            <Link className="text-[#26395C]"> 
-              Club <sup className="w-[41.95px] h-[16.5px] bg-[#0E8BFF] text-[#FFFFFF] text-[8px] rounded-[23px] flex items-center justify-center mb-5 gap-[2px]"> <Star className="size-2" /> HOT</sup>
-            </Link>
+            <NavLink
+              to="/club"
+              style={({ isActive }) => ({
+                color: isActive ? "#0E8BFF" : "black",
+              })}
+              className="text-[#26395C] flex flex-row items-center justify-center"
+            >
+              Club
+              <sup className="w-[41.95px] h-[16.5px] bg-[#0E8BFF] text-[#FFFFFF] text-[8px] rounded-[23px] flex items-center justify-center mb-5 gap-[2px]">
+                <Star className="size-2" /> HOT
+              </sup>
+            </NavLink>
           </NavbarItem>
 
           <NavbarItem>
@@ -79,7 +102,10 @@ function HeaderNavbar() {
               <DropdownTrigger>
                 <Button variant="none">
                   Things to do
-                  <ChevronDownIcon style={{ strokeWidth: 2 }} className="text-[#0E8BFF] w-4 h-4 font-bold stroke-2" />
+                  <ChevronDownIcon
+                    style={{ strokeWidth: 2 }}
+                    className="text-[#0E8BFF] w-4 h-4 font-bold stroke-2"
+                  />
                 </Button>
               </DropdownTrigger>
               <DropdownMenu
@@ -115,9 +141,7 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            {
-              value === true ? <MyModal/> : <ProfileDropDown />
-            }
+            {value === true ? <MyModal /> : <ProfileDropDown />}
             {/* <Dropdown>
               <DropdownTrigger>
                 <Button variant="none">
@@ -133,17 +157,18 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            <Button className="bg-[#0E8BFF] text-[#FFFFFF] font-bold">Contact Now</Button>
+            <Button className="bg-[#0E8BFF] text-[#FFFFFF] font-bold">
+              Contact Now
+            </Button>
           </NavbarItem>
-
         </NavbarContent>
 
         <div className="lg:hidden">
-        <NavbarContent className="w-full" justify="end">
-          <NavbarItem className="hidden lg:flex"> </NavbarItem>
+          <NavbarContent className="w-full" justify="end">
+            <NavbarItem className="hidden lg:flex"> </NavbarItem>
 
-          <NavbarItem>
-          <Badge
+            <NavbarItem>
+              <Badge
                 color="primary"
                 content={3}
                 shape="circle"
@@ -152,21 +177,19 @@ function HeaderNavbar() {
               >
                 <img src="Img/navbar-logos/shopping-cart.png" alt="" />
               </Badge>
-          </NavbarItem>
-        </NavbarContent>
+            </NavbarItem>
+          </NavbarContent>
 
-        <NavbarMenu className="bg-[#F5FAFF]">
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={index}>
-              <Link className="w-full text-[#26395C] capitalize ">{item}</Link>
-            </NavbarMenuItem>
-          ))}
-        </NavbarMenu>
-        
+          <NavbarMenu className="bg-[#F5FAFF]">
+            {menuItems.map((item, index) => (
+              <NavbarMenuItem key={index}>
+                <Link className="w-full text-[#26395C] capitalize ">
+                  {item}
+                </Link>
+              </NavbarMenuItem>
+            ))}
+          </NavbarMenu>
         </div>
-
-
-
       </Navbar>
     </section>
   );
