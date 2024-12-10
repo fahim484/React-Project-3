@@ -1,4 +1,4 @@
-function ChillsBay() {
+function ChillBay() {
   const cardsInfo = [
     {
       logo: "/Img/home/chills-bay/logo-1.png",
@@ -29,7 +29,9 @@ function ChillsBay() {
             <img className="w-fit mx-auto" src={card.logo} alt="Card Image" />
 
             <div className="max-w-[350px] mx-auto text-center">
-              <h3 className="text-3xl font-bold lg:text-[32px] lg:leading-[38px] mt-4 mb-3">{card.title}</h3>
+              <h3 className="text-3xl font-bold lg:text-[32px] lg:leading-[38px] mt-4 mb-3">
+                {card.title}
+              </h3>
               <p className="text-2xl leading-[34px]">{card.des}</p>
             </div>
           </div>
@@ -39,4 +41,4 @@ function ChillsBay() {
   );
 }
 
-export default ChillsBay;
+export default ChillBay;
