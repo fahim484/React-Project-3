@@ -157,7 +157,7 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            <Button className="bg-[#0E8BFF] text-[#FFFFFF] font-bold">
+            <Button radius="sm" className="bg-[#0E8BFF] text-[#FFFFFF] font-bold">
               Contact Now
             </Button>
           </NavbarItem>

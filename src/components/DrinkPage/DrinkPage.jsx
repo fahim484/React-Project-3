@@ -1,8 +1,11 @@
 import React from 'react'
+import DrinkHero from './DrinkHero'
 
 function DrinkPage() {
   return (
-    <div>DrinkPage</div>
+    <>
+    <DrinkHero />
+    </>
   )
 }
 
