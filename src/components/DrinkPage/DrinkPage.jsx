@@ -11,6 +11,7 @@ function DrinkPage() {
     <FindPlace />
     <Restaurants title="Popular Restaurants in Lagos" />
     <DrinkCarousel />
+    <Restaurants title="Restaurants nearby" />
     </>
   )
 }
