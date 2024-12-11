@@ -8,9 +8,9 @@ function FindPlace() {
   );
   return (
     <section className="w-[85%] mx-auto py-5">
-      <div className="bg-[#FBFCFF] w-full h-auto lg:h-[150px] py-10 px-10 lg:ms-10 rounded-xl lg:w-[90%]">
+      <div className="bg-[#FBFCFF] w-full h-auto lg:h-[190px] py-10 px-10 lg:ms-10 rounded-xl lg:w-[90%]">
         <h2 className="font-bold text-[#26395C] lg:text-[28px] lg:leading-[48px] mb2">Find the best places to eat and drink for any occasion</h2>
-        <div className="grid grid-col-1 lg:grid-cols-6 gap-10 ">
+        <div className="grid grid-col-1 lg:grid-cols-6 gap-10">
           <div>
             <Autocomplete
               labelPlacement="outside"
@@ -36,7 +36,6 @@ function FindPlace() {
               className="max-w-[284px]"
               label="Birth date"
             />
-            ;
           </div>
 
           <div>
@@ -91,7 +90,7 @@ function FindPlace() {
           </div>
 
           <div>
-            <Button color="primary" className="w-full p-8 mt-2">
+            <Button color="primary" radius="sm"  className="w-full p-8 mt-2">
               Search
             </Button>
           </div>
