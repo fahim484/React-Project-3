@@ -3,6 +3,7 @@ import DrinkHero from './DrinkHero'
 import FindPlace from './FindPlace'
 import Restaurants from '../common/RestaurantsCard'
 import DrinkCarousel from './DrinkCarousel'
+import Map from './Map'
 
 function DrinkPage() {
   return (
@@ -12,6 +13,7 @@ function DrinkPage() {
     <Restaurants title="Popular Restaurants in Lagos" />
     <DrinkCarousel />
     <Restaurants title="Restaurants nearby" />
+    <Map />
     </>
   )
 }
