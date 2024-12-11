@@ -24,7 +24,7 @@ function MyModal() {
   return (
     <section>
       <div className="flex flex-wrap gap-3">
-        <Button variant="flat" onPress={handleOpen}>
+        <Button variant="light" size="md" radius="sm" onPress={handleOpen}>
           <UserIcon className="text-gray-500 w-4 h-4" />
           Account
         </Button>

@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeaderNavbar from "./components/shared/Navbar";
 import HomePage from "./components/HomePage";
-import Footer from "./components/HomePage/Footer";
+import Footer from "./components/shared/Footer";
 import DrinkPage from "./components/DrinkPage/DrinkPage";
 import ClubPage from "./components/ClubPage/Club";
 
