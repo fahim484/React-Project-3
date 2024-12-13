@@ -128,15 +128,17 @@ function HeaderNavbar() {
 
           <NavbarItem>
             <Link className="foreground">
-              <Badge
-                color="primary"
-                content={3}
-                shape="circle"
-                placement="top-left"
-                size="md"
-              >
-                <img src="Img/navbar-logos/shopping-cart.png" alt="" />
-              </Badge>
+              <NavLink to="/cart">
+                <Badge
+                  color="primary"
+                  content={3}
+                  shape="circle"
+                  placement="top-left"
+                  size="md"
+                >
+                  <img src="Img/navbar-logos/shopping-cart.png" alt="" />
+                </Badge>
+              </NavLink>
             </Link>
           </NavbarItem>
 

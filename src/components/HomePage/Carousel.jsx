@@ -27,22 +27,22 @@ function Carousel() {
   const TagData = [
     {
       id: 1,
-      img: "Img/home/carousel/Calendar.png",
+      img: "Img/Calendar.png",
       title: "Dec 12 2024",
     },
     {
       id: 2,
-      img: "Img/home/carousel/Mark.png",
+      img: "Img/Mark.png",
       title: "TBS  Lagos",
     },
     {
       id: 3,
-      img: "Img/home/carousel/Clock.png",
+      img: "Img/Clock.png",
       title: "9:00 PM",
     },
     {
       id: 4,
-      img: "Img/home/carousel/Tag.png",
+      img: "Img/Tag.png",
       title: "N20,000",
     },
   ];
