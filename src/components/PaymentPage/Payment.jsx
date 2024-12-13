@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PayModal from "./PayModal";
 
 function MyPayment() {
   const [showPaymentInfo, SetShowPaymentInfo] = useState(false);
@@ -285,7 +286,8 @@ function MyPayment() {
               ).toLocaleString()}
             </span>
           </div>
-          {/* <PayModal /> */}
+          
+          <PayModal />
         </div>
       </div>
     </section>
