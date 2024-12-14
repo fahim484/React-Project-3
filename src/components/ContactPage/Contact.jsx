@@ -3,6 +3,7 @@ import { Input, Button } from "@nextui-org/react";
 import { Select, SelectItem } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import { MoonIcon } from "../Icon";
 
 function Contact() {
   const Items = [
@@ -170,6 +171,7 @@ function Contact() {
             <AccordionItem
               key="1"
               aria-label="Accordion 1"
+              indicator={<MoonIcon />}
               title="Do you offer refunds for purchased products?"
               className="py-9 px-10 font-bold text-[#26395C]"
             >
