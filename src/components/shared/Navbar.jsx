@@ -24,11 +24,12 @@ import {
 const value = true;
 
 import { ChevronDownIcon, UserIcon } from "@heroicons/react/24/outline";
-import { Star } from "../Icon";
+import { ShoppingIcon, Star } from "../Icon";
 import MyModal from "../HomePage/Modal";
 import ProfileDropDown from "../HomePage/Dropdown";
+import { themeColor } from "../../lib/utils";
 
-function HeaderNavbar() {
+function HeaderNavbar({ isDark }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
@@ -46,11 +47,12 @@ function HeaderNavbar() {
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         maxWidth="2xl"
+        className={themeColor(isDark)}
       >
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          ></NavbarMenuToggle>
+          />
         </NavbarContent>
 
         <NavbarContent className="sm:hidden pr-24">
@@ -73,9 +75,9 @@ function HeaderNavbar() {
           <NavbarItem>
             <NavLink
               to="/drink"
-              className="text-[#26395C]"
+              className={isDark ? "text-white" : "text-[#26395C]"}
               style={({ isActive }) => ({
-                color: isActive ? "#0E8BFF" : "black",
+                color: isActive ? "#0E8BFF" : isDark ? "white" : "black",
               })}
             >
               Eat & drink
@@ -86,7 +88,7 @@ function HeaderNavbar() {
             <NavLink
               to="/club"
               style={({ isActive }) => ({
-                color: isActive ? "#0E8BFF" : "black",
+                color: isActive ? "#0E8BFF" : isDark ? "white" : "black",
               })}
               className="text-[#26395C] flex flex-row items-center justify-center"
             >
@@ -98,7 +100,7 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            <Dropdown>
+            <Dropdown className={isDark ? "bg-slate-800 text-white" : ""}>
               <DropdownTrigger>
                 <Button variant="none">
                   Things to do
@@ -136,14 +138,14 @@ function HeaderNavbar() {
                   placement="top-left"
                   size="md"
                 >
-                  <img src="Img/navbar-logos/shopping-cart.png" alt="" />
+                  <ShoppingIcon isDark={isDark} />
                 </Badge>
               </NavLink>
             </Link>
           </NavbarItem>
 
           <NavbarItem>
-            {value === true ? <MyModal /> : <ProfileDropDown />}
+            {value === true ? <MyModal isDark={isDark} /> : <ProfileDropDown />}
             {/* <Dropdown>
               <DropdownTrigger>
                 <Button variant="none">

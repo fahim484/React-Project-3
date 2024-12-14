@@ -6,15 +6,16 @@ import {
     DropdownMenu,
     DropdownItem,
     Button,
+    cn,
   } from "@nextui-org/react";
   
-function ProfileDropDown() {
+const ProfileDropDown = ({isDark}) => {
   return (
     <div>
          <Dropdown>
               <DropdownTrigger>
-                <Button variant="none">
-                  <UserIcon className="text-gray-500 w-4 h-4" /> Account
+                <Button variant="none" color="primary" className={cn("text-gray-500", isDark && "bg-black text-white")}>
+                  <UserIcon className={cn("text-gray-500 w-4 h-4", isDark && "text-white")} /> Account
                 </Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="profile">

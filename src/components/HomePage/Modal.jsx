@@ -7,11 +7,12 @@ import {
   ModalFooter,
   Button,
   useDisclosure,
+  cn,
 } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
 import { UserIcon } from "@heroicons/react/24/outline";
 
-function MyModal() {
+const  MyModal = ({isDark}) =>  {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
     setIsOpen(true);
@@ -24,8 +25,16 @@ function MyModal() {
   return (
     <section>
       <div className="flex flex-wrap gap-3">
-        <Button variant="light" size="md" radius="sm" onPress={handleOpen}>
-          <UserIcon className="text-gray-500 w-4 h-4" />
+        <Button
+          variant="light"
+          size="md"
+          radius="sm"
+          onPress={handleOpen}
+          className={cn("bg-white text-black", isDark && "bg-black text-white")}
+        >
+          <UserIcon
+            className={cn("text-gray-500 w-4 h-4", isDark && " text-white")}
+          />
           Account
         </Button>
       </div>
@@ -136,10 +145,17 @@ function MyModal() {
                     Sign Up
                   </button>
 
-                  <p className="text-[#26395C] text-[12px] leading-[19px] mt-3 text-center"> 
-                  By creating an account, you agree to our <a href="#" className="text-[#0E8BFF]">Terms & Conditions</a> and <a href="#" className="text-[#0E8BFF]">Privacy Policy</a>.
+                  <p className="text-[#26395C] text-[12px] leading-[19px] mt-3 text-center">
+                    By creating an account, you agree to our{" "}
+                    <a href="#" className="text-[#0E8BFF]">
+                      Terms & Conditions
+                    </a>{" "}
+                    and{" "}
+                    <a href="#" className="text-[#0E8BFF]">
+                      Privacy Policy
+                    </a>
+                    .
                   </p>
-
                 </form>
               </div>
             </div>

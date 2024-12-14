@@ -7,23 +7,59 @@ import DrinkPage from "./components/DrinkPage/DrinkPage";
 import ClubPage from "./components/ClubPage/Club";
 import MyPayment from "./components/PaymentPage/Payment";
 import Contact from "./components/ContactPage/Contact";
+import { Warper } from "./components/common/warper";
 
-function App() {
+const App = () => {
   return (
     <>
-    <Router>
-        <HeaderNavbar />
+      <Router>
+        {/* <HeaderNavbar /> */}
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/drink" element={<DrinkPage />}></Route>
-          <Route path="/club" element={<ClubPage />}></Route>
-          <Route path="/cart" element={<MyPayment />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route
+            path="/"
+            element={
+              <Warper>
+                <HomePage />
+              </Warper>
+            }
+          />
+          <Route
+            path="/drink"
+            element={
+              <Warper>
+                <DrinkPage />
+              </Warper>
+            }
+          />
+          <Route
+            path="/club"
+            element={
+              <Warper isDark>
+                <ClubPage />
+              </Warper>
+            }
+          />
+          <Route
+            path="/cart"
+            element={
+              <Warper>
+                <MyPayment />
+              </Warper>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Warper>
+                <Contact />
+              </Warper>
+            }
+          />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );
-}
+};
 
 export default App;

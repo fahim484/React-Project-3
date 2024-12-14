@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button, cn } from "@nextui-org/react";
 
 const footerData = {
   socialIcons: [
@@ -45,15 +45,15 @@ const footerData = {
   copyright: `© ${new Date().getFullYear()} All rights reserved.`,
 };
 
-const MenuSection = ({ title, menus }) => {
+const MenuSection = ({ title, menus, isDark }) => {
   return (
     <div>
-      <p className="text-[#26395C] font-bold text-base leading-[18px] border-b-1 border-[#E4E7EC] mb-5 py-3">{title}</p>
+      <p className={cn("text-[#26395C] font-bold text-base leading-[18px] border-b-1 border-[#E4E7EC] mb-5 py-3", isDark && "text-[#FFFFFF]")}>{title}</p>
       <div className="flex gap-10">
         {menus.map((menu, index) => (
           <ul key={index}>
             {menu.items.map((item, idx) => (
-              <li key={idx} className="mb-4 text-[#656B89] text-base leading-[27px] cursor-pointer">
+              <li key={idx} className={cn("mb-4 text-[#656B89] text-base leading-[27px] cursor-pointer", isDark && "text-[#E4E7EC]")}>
                 {item}
               </li>
             ))}
@@ -64,7 +64,7 @@ const MenuSection = ({ title, menus }) => {
   );
 };
 
-function Footer() {
+const Footer = ({ isDark }) => {
   const { socialIcons, sections, partnerSection, logo, copyright } = footerData; // Destructuring
 
   return (
@@ -75,7 +75,7 @@ function Footer() {
         {/* left side */}
         <div className="col-span-1">
           <img className="w-fit" src={logo} alt="Footer Logo" />
-          <p className="text-[#26395C] text-[15px] leading-6 mb-4">{copyright}</p>
+          <p className={cn("text-[#26395C] text-[15px] leading-6 mb-4", isDark && "text-[#969DAA]")}>{copyright}</p>
           <div className="flex space-x-5">
             {socialIcons.map((icon, index) => (
               <a href="#" key={index} className="gap-4">
@@ -90,17 +90,18 @@ function Footer() {
           {sections.map((section, index) => (
             <MenuSection
               key={index}
+              isDark={isDark}
               title={section.title}
               menus={section.menus}
             />
           ))}
 
-          <div className="w-full bg-[#F5FAFF] py-[30px] px-6">
+          <div className={cn("w-full bg-[#F5FAFF] py-[30px] px-6", isDark && "bg-[#D0D8E7]/10")}>
             <img className="mb-4" src={partnerSection.image} alt="" />
-            <h3 className="text-[22px] leading-[27px] text-[#26395C] font-bold">
+            <h3 className={cn("text-[22px] leading-[27px] text-[#26395C] font-bold", isDark && "text-white")}>
               {partnerSection.title}
             </h3>
-            <p className="text-base leading-[27px] text-[#656B89] mt-3 mb-6">
+            <p className={cn("text-base leading-[27px] text-[#656B89] mt-3 mb-6", isDark && "text-[#969DAA]")}>
               {partnerSection.description}
             </p>
             <Button color="primary" className="w-full font-bold text-[15px] leading-4" size="xl">
