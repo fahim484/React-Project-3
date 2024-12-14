@@ -6,6 +6,7 @@ import Footer from "./components/shared/Footer";
 import DrinkPage from "./components/DrinkPage/DrinkPage";
 import ClubPage from "./components/ClubPage/Club";
 import MyPayment from "./components/PaymentPage/Payment";
+import Contact from "./components/ContactPage/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/drink" element={<DrinkPage />}></Route>
           <Route path="/club" element={<ClubPage />}></Route>
           <Route path="/cart" element={<MyPayment />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer />
       </Router>

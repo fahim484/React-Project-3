@@ -159,9 +159,11 @@ function HeaderNavbar() {
           </NavbarItem>
 
           <NavbarItem>
-            <Button radius="sm" className="bg-[#0E8BFF] text-[#FFFFFF] font-bold">
+            <NavLink to="/contact">
+            <button className="bg-[#0E8BFF] px-[19px] py-2.5 text-[15px] leading-[16px] rounded-md text-white font-bold ">
               Contact Now
-            </Button>
+            </button>
+            </NavLink>
           </NavbarItem>
         </NavbarContent>
 
