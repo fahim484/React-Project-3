@@ -1,5 +1,5 @@
-import Hero from "./hero";
-import Map from "../DrinkPage/Map";
+import Hero from "./Hero";
+import Map from "../common/Map";
 import Restaurants from "../common/RestaurantsCard";
 import Carousel from "../common/Carousel";
 

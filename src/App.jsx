@@ -7,7 +7,7 @@ import DrinkPage from "./components/DrinkPage/DrinkPage";
 import ClubPage from "./components/ClubPage/Club";
 import MyPayment from "./components/PaymentPage/Payment";
 import Contact from "./components/ContactPage/Contact";
-import { Warper } from "./components/common/warper";
+import { Warper } from "./components/common/Warper";
 
 const App = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import HeroArea from "./HeroArea";
 import ImgSection from "./ImgSection";
 import ThingsCard from "./ThingsToDo";
