@@ -9,12 +9,6 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: "",
-        secondary: "",
-        accent: "",
-        foreground: "",
-      },
       fontFamily: {
         heading: ['"Red Hat Display"', "serif"],
         body: ['"Plus Jakarta Sans"', "serif"],
