@@ -6,19 +6,19 @@ function Carousel() {
   const CarouselData = [
     {
       id: 1,
-      image: "Img/home/carousel/slider.png",
+      image: "Img/slider.png",
       heading: "Wizkid made in lagos tour",
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     },
     {
       id: 2,
-      image: "Img/home/carousel/slider.png",
+      image: "Img/slider.png",
       heading: "Hablu Programmer Is The Best",
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     },
     {
       id: 3,
-      image: "Img/home/carousel/slider.png",
+      image: "Img/slider.png",
       heading: "We Learning Full Stack Web Development",
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     },
@@ -132,8 +132,8 @@ function Carousel() {
                 <p>Connect with us on:</p>
 
                 <div className="flex gap-3">
-                  <img src="Img/home/carousel/Twitter.png" alt="" />
-                  <img src="Img/home/carousel/Instagram.png" alt="" />
+                  <img src="Img/Twitter.png" alt="" />
+                  <img src="Img/Instagram.png" alt="" />
                 </div>
               </div>
             </div>

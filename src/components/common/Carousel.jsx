@@ -78,12 +78,13 @@ const Carousel = ({ isDark, data, tags }) => {
                 <Button
                   color="primary"
                   variant={isDark ? "faded" : "bordered"}
-                  className={""}
+                  className="font-bold"
                   size="lg"
+                  radius="sm"
                 >
                   Add To Cart
                 </Button>
-                <Button color="primary" size="lg">
+                <Button color="primary" size="lg" radius="sm" className="font-bold">
                   Book Now
                 </Button>
               </div>
@@ -92,8 +93,8 @@ const Carousel = ({ isDark, data, tags }) => {
                 <p>Connect with us on:</p>
 
                 <div className="flex gap-3">
-                  <img src="/Twitter.png" alt="" />
-                  <img src="/Instagram.png" alt="" />
+                  <img src="/Img/Twitter.png" alt="" />
+                  <img src="/Img/Instagram.png" alt="" />
                 </div>
               </div>
             </div>

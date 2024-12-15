@@ -1,10 +1,11 @@
-import React from 'react'
+import { cn } from "@nextui-org/react"
 
-function Map() {
+
+function Map({ isDark }) {
   return (
-    <section className='bg-[#F5FAFF] pt-10 pb-[85px] px-10' style={{boxShadow: '0px -1px 0px 0px #9A9FBF1A'}}>
+    <section className={cn('bg-[#F5FAFF] pt-10 pb-[85px] px-10', isDark && "bg-black")} style={{boxShadow: '0px -1px 0px 0px #9A9FBF1A'}}>
        <div className='w-[80%] mx-auto'>
-       <img className='w-full object-cover rounded-lg md:rounded-3xl' src="./Img/drink/map.png" alt="" />
+       <img className='w-full object-cover rounded-lg md:rounded-3xl' src="./Img/map.png" alt="" />
        </div>
     </section>
   )
