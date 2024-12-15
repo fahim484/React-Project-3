@@ -17,6 +17,7 @@ function HeroArea() {
                 label="Location"
                 placeholder="Oshodi"
                 variant="bordered"
+                color="dark"
                 className="max-w-xs sm:max-w-full w-[100%]"
               >
                 <AutocompleteItem
@@ -44,6 +45,7 @@ function HeroArea() {
                 label="Date"
                 placeholder="Date"
                 variant="bordered"
+                color="dark"
                 className="max-w-xs sm:max-w-full w-[100%]"
               >
                 <AutocompleteItem
@@ -71,7 +73,8 @@ function HeroArea() {
                 label="Activities"
                 placeholder="Night Clubs"
                 variant="bordered"
-                className="max-w-xs sm:max-w-full w-[100%]"
+                color="dark"
+                className="max-w-xs sm:max-w-full w-[100%] "
               >
                 <AutocompleteItem
                   value="Hablu Programmer"

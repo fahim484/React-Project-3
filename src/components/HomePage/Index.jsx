@@ -7,7 +7,7 @@ import GALLERY from "./GALLERY";
 
 function HomePage() {
   return (
-    <>
+    < >
       <HeroArea />
       <ImgSection />
       <ThingsCard />

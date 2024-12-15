@@ -12,52 +12,54 @@ import { Warper } from "./components/common/Warper";
 const App = () => {
   return (
     <>
-      <Router>
-        {/* <HeaderNavbar /> */}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Warper>
-                <HomePage />
-              </Warper>
-            }
-          />
-          <Route
-            path="/drink"
-            element={
-              <Warper>
-                <DrinkPage />
-              </Warper>
-            }
-          />
-          <Route
-            path="/club"
-            element={
-              <Warper isDark>
-                <ClubPage />
-              </Warper>
-            }
-          />
-          <Route
-            path="/cart"
-            element={
-              <Warper>
-                <MyPayment />
-              </Warper>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <Warper>
-                <Contact />
-              </Warper>
-            }
-          />
-        </Routes>
-        {/* <Footer /> */}
-      </Router>
+      <main className="font-heading">
+        <Router>
+          {/* <HeaderNavbar /> */}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Warper>
+                  <HomePage />
+                </Warper>
+              }
+            />
+            <Route
+              path="/drink"
+              element={
+                <Warper>
+                  <DrinkPage />
+                </Warper>
+              }
+            />
+            <Route
+              path="/club"
+              element={
+                <Warper isDark>
+                  <ClubPage />
+                </Warper>
+              }
+            />
+            <Route
+              path="/cart"
+              element={
+                <Warper>
+                  <MyPayment />
+                </Warper>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <Warper>
+                  <Contact />
+                </Warper>
+              }
+            />
+          </Routes>
+          {/* <Footer /> */}
+        </Router>
+      </main>
     </>
   );
 };
