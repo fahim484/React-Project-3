@@ -8,11 +8,11 @@ const Club = () => {
   return (
     <main>
       <Hero />
-      <Restaurants isDark api="/clug-data.json" title="Popular Night Clubs" />
+      <Restaurants isDark api="/club-data.json" title="Popular Night Clubs" />
       <Carousel isDark data={CarouselData} tags={TagData} />
       <Restaurants
         isDark
-        api="/clug-data.json"
+        api="/club-data.json"
         title="Bars and Night clubs near you"
       />
       <Map isDark />

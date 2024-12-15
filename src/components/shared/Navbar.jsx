@@ -42,12 +42,12 @@ function HeaderNavbar({ isDark }) {
   ];
 
   return (
-    <section>
       <Navbar
+        position="scrollable"
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         maxWidth="2xl"
-        className={themeColor(isDark)}
+        className={`${themeColor(isDark)} pb-[14.9px] pt-[14.4px]`}
       >
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle
@@ -162,9 +162,9 @@ function HeaderNavbar({ isDark }) {
 
           <NavbarItem>
             <NavLink to="/contact">
-            <button className="bg-[#0E8BFF] px-[19px] py-2.5 text-[15px] leading-[16px] rounded-md text-white font-bold ">
-              Contact Now
-            </button>
+              <button className="bg-[#0E8BFF] px-[19px] py-2.5 text-[15px] leading-[16px] rounded-md text-white font-bold ">
+                Contact Now
+              </button>
             </NavLink>
           </NavbarItem>
         </NavbarContent>
@@ -197,7 +197,6 @@ function HeaderNavbar({ isDark }) {
           </NavbarMenu>
         </div>
       </Navbar>
-    </section>
   );
 }
 

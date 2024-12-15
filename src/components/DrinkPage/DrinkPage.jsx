@@ -9,9 +9,9 @@ function DrinkPage() {
     <>
     <DrinkHero />
     <FindPlace />
-    <Restaurants title="Popular Restaurants in Lagos" />
-    <DrinkCarousel />
-    <Restaurants title="Restaurants nearby" />
+    <Restaurants api="/data.json" title="Popular Restaurants in Lagos" />
+    {/* <DrinkCarousel data={CarouselData} tags={TagData} /> */}
+    <Restaurants api="/data.json" title="Restaurants nearby" />
     <Map />
     </>
   )

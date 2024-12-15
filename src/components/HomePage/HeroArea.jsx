@@ -2,7 +2,7 @@ import { Autocomplete, AutocompleteItem, Button } from "@nextui-org/react";
 
 function HeroArea() {
   return (
-    <section className="bg-[url('/Img/hero-bg-img.png')] w-full min-h-[100vh] bg-no-repeat bg-cover mt-4 overflow-hidden">
+    <section className="bg-[url('/Img/hero-bg-img.png')] w-full min-h-[100vh] bg-no-repeat bg-cover overflow-hidden">
       <div className="container w-[80%] mx-auto mt-10">
         <h1 className="w-[full] lg:w-[50%] text-[#FFFFFF] text-3xl lg:text-[62px] lg:leading-[74.4px] font-bold pb-10 xl:py-10 xl:px-10 mt-10 leading-tight text-center lg:text-start">
           Find amazing things to do anytime, anywhere in Lagos.
