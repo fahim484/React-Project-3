@@ -8,7 +8,7 @@ function HeroArea() {
           Find amazing things to do anytime, anywhere in Lagos.
         </h1>
 
-        <div className="bg-[#FBFCFF] w-full h-auto lg:w-[750px] lg:h-[150px] py-10 px-10 xl:ms-10 rounded-lg">
+        <div className="bg-[#FBFCFF] w-full h-auto lg:w-[780px] lg:h-[150px] py-10 px-10 xl:ms-10 rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
             <div>
               <Autocomplete
@@ -74,7 +74,7 @@ function HeroArea() {
                 placeholder="Night Clubs"
                 variant="bordered"
                 color="dark"
-                className="max-w-xs sm:max-w-full w-[100%] "
+                className="max-w-xs sm:max-w-full w-[100%]"
               >
                 <AutocompleteItem
                   value="Hablu Programmer"
