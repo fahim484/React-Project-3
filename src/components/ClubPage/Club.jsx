@@ -1,8 +1,8 @@
 
 import Hero from "./hero";
-import Carousel from "../HomePage/Carousel";
 import Map from "../DrinkPage/Map";
 import Restaurants from "../common/RestaurantsCard";
+import Carousel from "../common/Carousel";
 
 const Club = () => {
   return (

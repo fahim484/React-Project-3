@@ -5,7 +5,8 @@
     "img": "/Img/club/club-1.png",
     "title": "Quilox",
     "des": "2 Musa Yar’Adua, Lagos Nigeria",
-    "tags": "African • Italian • Asian • Continental"
+    "day": "Mondays-Friday",
+    "time": "8:00 PM - 11:00 PM"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "img": "/Img/club/club-2.png",
     "title": "Silver fox",
     "des": "2 Musa Yar’Adua, Lagos Nigeria",
-    "tags": "African • Italian • Asian • Continental"
+    "day": "Mondays-Friday",
+    "time": "8:00 PM - 11:00 PM"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "img": "/Img/club/club-3.png",
     "title": "Nitro night club",
     "des": "2 Musa Yar’Adua, Lagos Nigeria",
-    "tags": "African • Italian • Asian • Continental"
+    "day": "Mondays-Friday",
+    "time": "8:00 PM - 11:00 PM"
   },
   {
     "id": 4,
@@ -29,6 +32,7 @@
     "img": "/Img/club/club-4.png",
     "title": "Club vegas",
     "des": "2 Musa Yar’Adua, Lagos Nigeria",
-    "tags": "African • Italian • Asian • Continental"
+    "day": "Mondays-Friday",
+    "time": "8:00 PM - 11:00 PM"
   }
 ]
